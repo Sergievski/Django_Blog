@@ -35,7 +35,7 @@ class Room(models.Model):
     topic - ForeignKey from Topic ,
     name,
     description ,
-    participants - ManyToMany Relations with User (One user may participate in many rooms and one room may consist many users),
+    participants - ManyToMany relations with User (One user may participate in many rooms and one room may consist many users),
     updated,
     created 
     
@@ -48,4 +48,10 @@ class Message(models.Model):
     created 
     
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Description : 
+The main page shows a study rooms. Users may search for rooms by topic (click on topic row ) or by enter (partial) room name/room description in the search box.
+The recent activity is shown in the right column (including room name, time and user). 
+After registration every user has his own profile page (shown to everybody) and may update it.  
+Every registered (and loged in) user may Create, Read, Update, Delete a study room and post comments (may delete his own comments).
+
 
